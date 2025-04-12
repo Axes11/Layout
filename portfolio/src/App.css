@@ -1,74 +1,29 @@
 body{
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #0a0a0a;
+
+  overflow-x: hidden;
 }
 
-.button{
-  border: #F24E51 2px solid;
-  background-color: transparent;
-  padding: 10px 20px;
-  border-radius: 100px;
-
-  transition: .3s all;
+.outfit {
+  font-family: "Outfit", sans-serif;
 }
 
-.button:hover{
-  border: #F24E51 2px solid;
-  background-color: #F24E51;
-  cursor: pointer;
-  color: white;
+.dm-sans{
+  font-family: "DM Sans", sans-serif;
 }
 
-.grey-text{
-  color: #AFAFAF;
+.beforeBg{
+  width: 110%;
+  transform: translate(-40%);
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
+.afterBg{
+  width: 200%;
+  transform: translate(80%);
 }
 
-.menu a {
-  position: relative;
-  text-decoration: none;
-  color: #333;
-  padding: 10px;
-}
-
-.menu a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0px;
-  width: 6px;
-  height: 6px;
-  background-color: #F24E51;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.menu a:hover::after {
-  opacity: 1;
-}
-
-.input{
-  border: none;
-  border-bottom: 2px solid #FFFFFF;
-  padding-left: 10px;
-  color: white;
-  height: 55px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.input:focus{
-  outline: none;
-}
-
-.input::placeholder{
-  color: #AFAFAF;
+.header{
+  position: fixed;
 }
